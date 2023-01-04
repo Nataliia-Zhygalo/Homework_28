@@ -20,7 +20,7 @@ p.check(obj); // --> no p.input() -> 3 prompt -> рахує
    sign: "/",
 }
 
-class superMath {
+class SuperMath {
   check (currentInput) {
     let answer = confirm(`Do you want to do this operation: ${currentInput.X} ${currentInput.sign} ${currentInput.Y}?`);
           if (answer === true) {
@@ -55,7 +55,7 @@ return (this.doMath(getNewInput));
    }
 }
 let result = 0;
-let superMathresult = new superMath();
+let superMathresult = new SuperMath();
 console.log(superMathresult);
 superMathresult.check(obj) ?  result = superMathresult.doMath(obj) : result = superMathresult.input();
 alert(`Your result is ${result}`)
